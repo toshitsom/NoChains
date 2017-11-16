@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ISA Portal</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+      <body class="container"style="background:url(nochain.jpg)">
+        <a href="index.html" class="btn btn-danger"style="margin-left:45%">Home</a>
+        <a href="isaportal.html" class="btn btn-danger">Back</a>
+          
+          <div class="container text-center" id="about">
+              <div class="well"style="border:solid">
+                    <img src="saudit.jpg"/>
+                    <h3 style="color:dodgerblue">About the ISA portal</h3>
+                    <p>This Portal is designed for "anonymous whistle blowers", incorporating citizens towards transparent governance.</p>
+                    
+                    <p>A social audit is a way of measuring, understanding, reporting and ultimately improving an organization’s social and ethical performance. 
+                      <br>A social audit helps to narrow gaps between vision/goal and reality, between efficiency and effectiveness. 
+                      <br>It is a technique to understand, measure, verify, report on and to improve the social performance of the organization.
+                      
+                      <br>Social auditing creates an impact upon governance. It values the voice of stakeholders, including marginalized/poor groups whose voices are rarely heard.
+                      <br> Social auditing is taken up for the purpose of enhancing local governance, particularly for strengthening accountability and transparency in local bodies.</p>
+                      
+                      <strong><h4>Features:</h4></strong>
+                      <p>1. A company can register itself to be a part of the open ledger.
+                        <br>2. The Company or organization has to update the progress of a task undertaken
+                        <br> 3. Any individual can see the progress through the public ledger, verify the progress and complain againt the comapny if found wrong.
+                      </p>
+
+                    <h4 style="text-align:center">Scroll Down ---- to see</h4>                
+                        </div>
+            </div>
+            <div class="container text-center">
+                    
+                    <div class="col-sm-6">
+                            
+                        <div class="well" style="border:solid">
+                                <h3 style="color:dodgerblue">Add Transaction</h3>                
+                    <form class="form-horizontal">
+                      <div class="form-group">
+                        <label class="control-label col-sm-3" for="_asset_ac">Asset Ac:</label>
+                        <div class="col-sm-8" id="asset">
+                          <input type="text" class="form-control" id="_asset_ac">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                            <label class="control-label col-sm-3" for="_user_ac">User Ac:</label>
+                            <div class="col-sm-8" id="user">
+                              <input type="text" class="form-control" id="_user_ac">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                                <label class="control-label col-sm-3" for="_mode">Mode:</label>
+                                <div class="col-sm-3">
+                                        <select class="form-control" id="_mode">
+                                                
+                                                <option>update</option>
+                                                <option>complain</option>
+                                        </select>
+                                </div>
+                              </div>
+                          <div class="form-group">
+                                <label class="control-label col-sm-3" for="_description">Description:</label>
+                                <div class="col-sm-8" id="desc">
+                                  <textarea rows="5" type="text" class="form-control" id="_description"></textarea>
+                                </div>
+                              </div>
+                              <a href="#" onclick="add_trans()" class="btn btn-primary btn-md">Add</a>
+                              
+                    </form>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                    <div class="well" style="border:solid">
+                            <h3 style="color:dodgerblue">Create Asset</h3>
+                                <form class="form-horizontal">
+                                        <div class="form-group">
+                                          <label class="control-label col-sm-3" for="_asset_name">Asset Name:</label>
+                                          <div class="col-sm-8" id="aname">
+                                            <input type="text" class="form-control" id="_asset_name">
+                                          </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-3" for="assetac">Asset Ac:</label>
+                                            <div class="col-sm-8" id="aac">
+                                              <input type="text" class="form-control" id="assetac">
+                                            </div>
+                                          </div>
+                                        <a href="#" onclick="create_asset()" class="btn btn-primary btn-md">Create</a>
+                                        </form> 
+                        </div>
+                        <br>
+                        <br>
+                        <a href="#" onclick="get_trans()" class="btn btn-danger">View Ledger</a>
+            </div>
+                  </div>
+                  
+      </body>
+      <script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+      <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+      <script src="app.js"></script>
+</html>
+<style>
+    
+    
+</style>
+
+
+
